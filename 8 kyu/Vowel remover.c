@@ -16,8 +16,8 @@
 
 char *shortcut (char *str_out, const char *str_in){
   int a = 0, b = 0;
-  int str_len = strlen(str_in);
   char c;
+  int str_len = strlen(str_in);
   while (a <= str_len){
     c = str_in[a];
     if(!(c == 'a' ||
