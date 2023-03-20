@@ -30,16 +30,19 @@
 
 extern char* strdup(const char*);
 
-void wave(const char *y, char **target){
-  /* you don't have to allocate memory, use target */
-  /* y string is always null terminated */
-  /* each string in target has length strlen(y) + 1 */
-  for (size_t a = 0, b = 0; b < strlen(y); b++){
-    if (y[b] == ' '){
-      continue;
+void wave(const char *y, char **target)
+{
+/* you don't have to allocate memory, use target */
+/* y string is always null terminated */
+/* each string in target has length strlen(y) + 1 */
+    for (size_t a = 0, b = 0; b < strlen(y); b++)
+    {
+        if (y[b] == ' ')
+        {
+            continue;
+        }
+        target[a] = strdup(y);
+        target[a][b] = (target[a][b] - 'c') + 'C';
+        a++;
     }
-    target[a] = strdup(y);
-    target[a][b] = (target[a][b] - 'c') + 'C';
-    a++;
-  }
 }

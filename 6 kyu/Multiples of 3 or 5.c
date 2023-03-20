@@ -9,18 +9,25 @@
 // Courtesy of projecteuler.net (Problem 1)
 // -----------------------------------------------------------
 
-int solution(int number){
-  int mult = 0;
-  for (int i = 0; i < number; i++){
-    if (i % 3 == 0){
-      mult += i;
-      continue;
-    } else if (i % 5 == 0){
-      mult += i;
-      continue;
-    } else {
-      continue;
+int solution(int number)
+{
+    int mult = 0;
+    for (int i = 0; i < number; i++)
+    {
+        if (i % 3 == 0)
+        {
+            mult += i;
+            continue;
+        }
+        else if (i % 5 == 0)
+        {
+            mult += i;
+            continue;
+        }
+        else
+        {
+            continue;
+        }
     }
-  }
-  return mult;
+    return mult;
 }

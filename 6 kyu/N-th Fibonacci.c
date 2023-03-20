@@ -14,12 +14,14 @@
 
 typedef unsigned long long ull;
 
-ull nth_fib(int n){
-  ull a = 0, b = 1;
-  for (int i = 1; i < n; i++){
-    ull c = a;
-    a = b;
-    b += c;
-  }
-  return a;
+ull nth_fib(int n)
+{
+    ull a = 0, b = 1;
+    for (int i = 1; i < n; i++)
+    {
+        ull c = a;
+        a = b;
+        b += c;
+    }
+    return a;
 }

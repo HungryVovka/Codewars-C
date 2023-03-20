@@ -10,13 +10,17 @@
 
 #include <math.h>
 
-unsigned long long next_smaller_pronic(unsigned long long n){
-  unsigned long long sq_n = sqrt(n);
-  long answer;
-  if ((sq_n + 1) * sq_n >= n){
-    answer = (sq_n - 1) * sq_n;
-  } else {
-    answer = (sq_n + 1) * sq_n;
-  }
-  return answer;
+unsigned long long next_smaller_pronic(unsigned long long n)
+{
+    unsigned long long sq_n = sqrt(n);
+    long answer;
+    if ((sq_n + 1) * sq_n >= n)
+    {
+        answer = (sq_n - 1) * sq_n;
+    }
+    else
+    {
+        answer = (sq_n + 1) * sq_n;
+    }
+    return answer;
 }

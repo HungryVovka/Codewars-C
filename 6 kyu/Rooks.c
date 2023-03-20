@@ -10,27 +10,31 @@
 // Range: (1 ≤ n ≤ 15) and (0 ≤ k ≤ n2)
 // -----------------------------------------------------------
 
-long int rooks(int n, int k){
-  long int x = 0;
-  long int y = 1;
-  while (x < k){
-    y = y * n * n;
-    n = n - 1;
-    y = y / (x + 1);
-    x++;
-  }
-  return y;
+long int rooks(int n, int k)
+{
+    long int x = 0;
+    long int y = 1;
+    while (x < k)
+    {
+        y = y * n * n;
+        n = n - 1;
+        y = y / (x + 1);
+        x++;
+    }
+    return y;
 }
 
 // or
 
-long int rooks(int n, int k){
-  long int x = 1;
-  long int y = 1;
-  while (x <= k){
-    y = y * n * n / x;
-    x++;
-    n--;
-  }
-  return y;
+long int rooks(int n, int k)
+{
+    long int x = 1;
+    long int y = 1;
+    while (x <= k)
+    {
+        y = y * n * n / x;
+        x++;
+        n--;
+    }
+    return y;
 }
