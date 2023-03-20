@@ -17,6 +17,7 @@
 // Input numbers can reach 1920767766; watch out for integer overflow (it is guaranteeed that the result will fit in a long long).
 // -----------------------------------------------------------
 
-long long pentagonal(long long n){
-  return n < 1 ? - 1 : (int) 1 + ((n - 1) * 5ULL * n) / 2;
+long long pentagonal(long long n)
+{
+    return n < 1 ? - 1 : (int) 1 + ((n - 1) * 5ULL * n) / 2;
 }

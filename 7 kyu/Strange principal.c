@@ -15,6 +15,7 @@
 
 #include <math.h>
 
-unsigned num_of_open_lockers(unsigned long long n){
-  return floor(sqrt(n));
+unsigned num_of_open_lockers(unsigned long long n)
+{
+    return floor(sqrt(n));
 }

@@ -20,7 +20,8 @@
 // Note: The input will always be valid (a positive integer)
 // -----------------------------------------------------------
 
-int make_move(int n){
-  int r = 4;
-  return n % r;
+int make_move(int n)
+{
+    int r = 4;
+    return n % r;
 }

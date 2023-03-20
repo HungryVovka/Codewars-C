@@ -9,6 +9,7 @@
 
 #include <math.h>
 
-unsigned max_bisectors(unsigned n){
-  return floor(n * n / 4);
+unsigned max_bisectors(unsigned n)
+{
+    return floor(n * n / 4);
 }

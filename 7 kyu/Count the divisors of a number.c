@@ -13,12 +13,15 @@
 // counted in each case.
 // -----------------------------------------------------------
 
-int divisors(int n){
-  int answer = 1;
-  for (int i = 1; i <= n / 2; i++){
-    if (n % i == 0){
-      answer += 1;
+int divisors(int n)
+{
+    int answer = 1;
+    for (int i = 1; i <= n / 2; i++)
+    {
+        if (n % i == 0)
+        {
+            answer += 1;
+        }
     }
-  }
-  return answer;
+    return answer;
 }

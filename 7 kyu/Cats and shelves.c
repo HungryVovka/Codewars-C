@@ -35,7 +35,8 @@
 
 #include <math.h>
 
-int Cats(int start, int finish){
-  int kittyJump = finish - start;
-  return floor(kittyJump / 3) + kittyJump % 3;
+int Cats(int start, int finish)
+{
+    int kittyJump = finish - start;
+    return floor(kittyJump / 3) + kittyJump % 3;
 }

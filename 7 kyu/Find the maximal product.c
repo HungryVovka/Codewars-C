@@ -29,16 +29,20 @@
 #include <stddef.h>
 #include <math.h>
 
-int find_max_product(size_t length, const int arr[length]){
-  double answer = -INFINITY;
-  for (int i = 1; i <= length; i++){
-    int j = 1;
-    for (int k = i - 1; k < length; k += i){
-      j *= arr[k];
+int find_max_product(size_t length, const int arr[length])
+{
+    double answer = -INFINITY;
+    for (int i = 1; i <= length; i++)
+    {
+        int j = 1;
+        for (int k = i - 1; k < length; k += i)
+        {
+            j *= arr[k];
+        }
+        if (answer < j)
+        {
+            answer = j;
+        }
     }
-    if (answer < j){
-      answer = j;
-    }
-  }
-  return answer;
+    return answer;
 }

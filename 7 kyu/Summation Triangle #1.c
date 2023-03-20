@@ -29,8 +29,9 @@
 // Sums of powers
 // -----------------------------------------------------------
 
-unsigned long long get_sum(unsigned n){
-  n += 1ULL;
-  long int r = 6ULL;
-  return (4ULL * (n - 1ULL) + 3ULL) * (n + 1ULL) * n / r;
+unsigned long long get_sum(unsigned n)
+{
+    n += 1ULL;
+    long int r = 6ULL;
+    return (4ULL * (n - 1ULL) + 3ULL) * (n + 1ULL) * n / r;
 }

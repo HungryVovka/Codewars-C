@@ -21,13 +21,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *series_sum(const size_t n){
+char *series_sum(const size_t n)
+{
 // return a nul-terminated, heap-allocated string:
-  double a = 0;
-  for (size_t i = 0; i < n; i++){
-    a += 1.0 / (i * 3 + 1);
-  }
-  char *answer = "";
-  asprintf(&answer, "%.02f", a);
-  return answer;
+    double a = 0;
+    for (size_t i = 0; i < n; i++)
+    {
+        a += 1.0 / (i * 3 + 1);
+    }
+    char *answer = "";
+    asprintf(&answer, "%.02f", a);
+    return answer;
 }

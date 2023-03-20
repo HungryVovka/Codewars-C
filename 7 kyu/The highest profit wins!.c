@@ -16,14 +16,19 @@
 // don't have to check for null, undefined or similar.
 // -----------------------------------------------------------
 
-void min_max (const int arr[], int count, int *min, int *max){
+void min_max (const int arr[], int count, int *min, int *max)
+{
 // assign to the min and max pointers
-  *min = *max = arr[0];
-  for (int i = 0; i < count; i++){
-    if (*max < arr[i]){
-      *max = arr[i];
-    } else if (*min > arr[i]){
-      *min = arr[i];
+    *min = *max = arr[0];
+    for (int i = 0; i < count; i++)
+    {
+        if (*max < arr[i])
+        {
+            *max = arr[i];
+        }
+        else if (*min > arr[i])
+        {
+            *min = arr[i];
+        }
     }
-  }
 }

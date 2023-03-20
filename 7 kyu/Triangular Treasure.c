@@ -16,6 +16,7 @@
 // -10 --> 0
 // -----------------------------------------------------------
 
-int triangular(int x){
-  return x > 0 ? ceil((x + 1) * x / 2) : 0;
+int triangular(int x)
+{
+    return x > 0 ? ceil((x + 1) * x / 2) : 0;
 }

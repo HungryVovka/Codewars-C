@@ -26,24 +26,31 @@
 #include <stdbool.h>
 #include <math.h>
 
-bool is_square(int n) {
-  if (n < 0){
-    return false;
+bool is_square(int n)
+{
+    if (n < 0)
+    {
+        return false;
     }
-  if (n == 0){
-    return true;
+    if (n == 0)
+    {
+        return true;
     }
-  int n1 = 1, n2 = n;
-  while (n1 + 1 < n2){
-    int n3 = floor((n1 + n2) / 2);
-    if (pow(n3, 2) < n){
-      n1 = n3;
-    } else {
-      n2 = n3;
+    int n1 = 1, n2 = n;
+    while (n1 + 1 < n2)
+    {
+        int n3 = floor((n1 + n2) / 2);
+        if (pow(n3, 2) < n)
+        {
+            n1 = n3;
+        }
+        else
+        {
+            n2 = n3;
+        }
     }
-  }
-  bool answer = (n == pow(n1, 2)) || n == pow((n1 + 1), 2);
-  return answer;
+    bool answer = (n == pow(n1, 2)) || n == pow((n1 + 1), 2);
+    return answer;
 }
 
 // or
@@ -51,7 +58,8 @@ bool is_square(int n) {
 #include <stdbool.h>
 #include <math.h>
 
-bool is_square(int n){
-  int squareN = sqrt(n);
-  return n == pow(squareN, 2);
+bool is_square(int n)
+{
+    int squareN = sqrt(n);
+    return n == pow(squareN, 2);
 }
