@@ -9,22 +9,31 @@
 // 1 <= month <= 12
 // -----------------------------------------------------------
 
-int quarter_of(int month){
-  double q[] = {1, 2, 3, 4};
-  if (month >= 1 && month <= 3){
-    return q[0];
-  } else if (month >= 4 && month <= 6){
-    return q[1];
-  } else if (month >= 7 && month <= 9){
-    return q[2];
-  } else if (month >= 10 && month <= 12){
-    return q[3];
-  }
-  return month;
+int quarter_of(int month)
+{
+    double q[] = {1, 2, 3, 4};
+    if (month >= 1 && month <= 3)
+    {
+        return q[0];
+    }
+    else if (month >= 4 && month <= 6)
+    {
+        return q[1];
+    }
+    else if (month >= 7 && month <= 9)
+    {
+        return q[2];
+    }
+    else if (month >= 10 && month <= 12)
+    {
+        return q[3];
+    }
+    return month;
 }
 
 // or
 
-int quarter_of(int month){
-  return (month + 2) / 3;
+int quarter_of(int month)
+{
+    return (month + 2) / 3;
 }

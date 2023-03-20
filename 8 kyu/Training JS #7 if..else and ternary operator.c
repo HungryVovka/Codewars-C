@@ -51,9 +51,10 @@
 // In the end, click "Submit" to submit your code pass this kata.
 // -----------------------------------------------------------
 
-unsigned short sale_hotdogs(unsigned short n){
-  if (n < 5) return n * 100;
-  if (10 > n && n >= 5) return n * 95;
-  if (n >= 10) return n * 90;
-  return 0;
+unsigned short sale_hotdogs(unsigned short n)
+{
+    if (n < 5) return n * 100;
+    if (10 > n && n >= 5) return n * 95;
+    if (n >= 10) return n * 90;
+    return 0;
 }

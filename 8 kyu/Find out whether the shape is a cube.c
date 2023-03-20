@@ -17,6 +17,7 @@
 #include <stdbool.h>
 #include <math.h>
 
-bool cube_checker(int volume, int side){
-  return 0 < volume && volume == pow(side, 3);
+bool cube_checker(int volume, int side)
+{
+    return 0 < volume && volume == pow(side, 3);
 }

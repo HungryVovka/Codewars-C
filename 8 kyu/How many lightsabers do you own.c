@@ -12,6 +12,7 @@
 // "Zach" --> 18
 // -----------------------------------------------------------
 
-int HowManyLightsabersDoYouOwn(const char *name){
-  return strcmp(name, "Zach") == 0 ? 18 : 0;
+int HowManyLightsabersDoYouOwn(const char *name)
+{
+    return strcmp(name, "Zach") == 0 ? 18 : 0;
 }

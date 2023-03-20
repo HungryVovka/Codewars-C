@@ -10,12 +10,15 @@
 
 #include <stddef.h>
 
-int find_smallest_int(const int array[/* len */], size_t len){
-  int answer = array[0];
-  for (size_t i = 1; i < len; i++){
-    if (array[i] < answer){
-      answer = array[i];
+int find_smallest_int(const int array[/* len */], size_t len)
+{
+    int answer = array[0];
+    for (size_t i = 1; i < len; i++)
+    {
+        if (array[i] < answer)
+        {
+            answer = array[i];
+        }
     }
-  }
-  return answer;
+    return answer;
 }

@@ -7,5 +7,5 @@
 const char *bool_to_word (bool value)
 {
 // you can return a static/global string or a string literal
-  return value == false ? "No" : "Yes";
+    return value == false ? "No" : "Yes";
 }

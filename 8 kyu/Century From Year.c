@@ -16,7 +16,8 @@
 // (https://en.wikipedia.org/wiki/Century)
 // -----------------------------------------------------------
 
-int centuryFromYear(int year){
-  float answer = (year - 1) / 100;
-  return (int)answer + 1;
+int centuryFromYear(int year)
+{
+    float answer = (year - 1) / 100;
+    return (int)answer + 1;
 }

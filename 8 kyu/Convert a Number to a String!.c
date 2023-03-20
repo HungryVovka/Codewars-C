@@ -13,18 +13,20 @@
 
 #include <stdlib.h>
 
-char *number_to_string(int number){
-  char *answer = malloc(50);
-  sprintf(answer, "%d", number);
-  return answer;
+char *number_to_string(int number)
+{
+    char *answer = malloc(50);
+    sprintf(answer, "%d", number);
+    return answer;
 }
 
 // or
 
 #include <stdlib.h>
 
-char *number_to_string(int number){
-  char *answer;
-  asprintf(&answer, "%d", number);
-  return answer;
+char *number_to_string(int number)
+{
+    char *answer;
+    asprintf(&answer, "%d", number);
+    return answer;
 }

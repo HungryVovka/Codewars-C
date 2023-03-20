@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <math.h>
 
-int32_t square(int32_t number){
-  return pow(number, 2);
+int32_t square(int32_t number)
+{
+    return pow(number, 2);
 }

@@ -12,10 +12,14 @@
 
 #include <stdbool.h>
 
-void _if(bool value, void (*func1)(), void (*func2)()){
-  if (value == true){
-    return func1();
-  } else {
-    return func2();
-  }
+void _if(bool value, void (*func1)(), void (*func2)())
+{
+    if (value == true)
+    {
+        return func1();
+    }
+    else
+    {
+        return func2();
+    }
 }

@@ -7,10 +7,12 @@
 #include <stddef.h>
 #include <math.h>
 
-int square_sum(const int values[/* count */], size_t count){
-	int sums = 0;
-  for (size_t i = 0; i < count; i++){
-    sums += values[i] * values[i];
-  }
-  return sums;
+int square_sum(const int values[/* count */], size_t count)
+{
+    int sums = 0;
+    for (size_t i = 0; i < count; i++)
+    {
+        sums += values[i] * values[i];
+    }
+    return sums;
 }

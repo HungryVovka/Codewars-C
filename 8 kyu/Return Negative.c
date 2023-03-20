@@ -11,6 +11,7 @@
 // Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
 // -----------------------------------------------------------
 
-int makeNegative(int num){
-  return num > 0 ? (- num) : num;
+int makeNegative(int num)
+{
+    return num > 0 ? (- num) : num;
 }

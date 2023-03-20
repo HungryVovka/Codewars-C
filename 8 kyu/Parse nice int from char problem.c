@@ -7,14 +7,16 @@
 // always a number.
 // -----------------------------------------------------------
 
-int getAge(const char *age){
-  return (int)(age[0] - '0');
+int getAge(const char *age)
+{
+    return (int)(age[0] - '0');
 }
 
 // or
 
 #include <stdlib.h>
 
-int getAge(const char *age){
-  return atoi(age);
+int getAge(const char *age)
+{
+    return atoi(age);
 }

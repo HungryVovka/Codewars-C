@@ -10,7 +10,8 @@
 
 #include <math.h>
 
-unsigned mango(unsigned quantity, unsigned price){
-  int discount = trunc(quantity / 3) * price;
-  return quantity * price - discount;
+unsigned mango(unsigned quantity, unsigned price)
+{
+    int discount = trunc(quantity / 3) * price;
+    return quantity * price - discount;
 }

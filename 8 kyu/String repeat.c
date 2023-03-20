@@ -8,10 +8,12 @@
 
 #include <string.h>
 
-char *repeat_str(size_t count, const char *src){
-  char *answer = (char *) calloc(count * strlen(src), 1);
-  for (int i = 0; i < count; i++){
-    strncat(answer, src, strlen(src));
-  }
-  return answer;
+char *repeat_str(size_t count, const char *src)
+{
+    char *answer = (char *) calloc(count * strlen(src), 1);
+    for (int i = 0; i < count; i++)
+    {
+        strncat(answer, src, strlen(src));
+    }
+    return answer;
 }

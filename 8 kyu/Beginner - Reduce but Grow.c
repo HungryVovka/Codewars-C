@@ -6,10 +6,12 @@
 
 #include <stddef.h>
 
-int grow(size_t size, const int arr[size]){
-  int answer = 1;
-  for (size_t i = 0; i < size; i++){
-    answer *= arr[i];
-  }
-  return answer;
+int grow(size_t size, const int arr[size])
+{
+    int answer = 1;
+    for (size_t i = 0; i < size; i++)
+    {
+        answer *= arr[i];
+    }
+    return answer;
 }

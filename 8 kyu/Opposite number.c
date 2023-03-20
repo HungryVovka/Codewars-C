@@ -8,6 +8,7 @@
 // -34: 34
 // -----------------------------------------------------------
 
-float opposite(float num){
-  return 0 - num;
+float opposite(float num)
+{
+    return 0 - num;
 }

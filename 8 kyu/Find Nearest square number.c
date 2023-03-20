@@ -19,20 +19,25 @@
 #include <math.h>
 #include <stdlib.h>
 
-int nearest_sq(int n){
-  int sqBefore = pow(floor(sqrt(n)), 2);
-  int sqAfter = pow(floor(sqrt(n) + 1), 2);
-  if (abs(n - sqBefore) < abs(n - sqAfter)){
-    return sqBefore;
-  } else {
-    return sqAfter;
-  }
+int nearest_sq(int n)
+{
+    int sqBefore = pow(floor(sqrt(n)), 2);
+    int sqAfter = pow(floor(sqrt(n) + 1), 2);
+    if (abs(n - sqBefore) < abs(n - sqAfter))
+    {
+        return sqBefore;
+    }
+    else
+    {
+        return sqAfter;
+    }
 }
 
 // or
 
 #include <math.h>
 
-int nearest_sq(int n){
-  return pow(round(sqrt(n)), 2);
+int nearest_sq(int n)
+{
+    return pow(round(sqrt(n)), 2);
 }

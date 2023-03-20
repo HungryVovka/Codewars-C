@@ -11,9 +11,11 @@
 #include <inttypes.h>
 #include <stddef.h>
 
-void powers_of_two (size_t n, uint64_t powers[n + 1]){
-  // fill the powers[] array
-  for (int i = 0; i < n + 1; i++){
-    powers[i] = pow(2, i);
-  }
+void powers_of_two (size_t n, uint64_t powers[n + 1])
+{
+// fill the powers[] array
+    for (int i = 0; i < n + 1; i++)
+    {
+        powers[i] = pow(2, i);
+    }
 }
