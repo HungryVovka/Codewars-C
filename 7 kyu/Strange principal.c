@@ -37,6 +37,6 @@ unsigned num_of_open_lockers(unsigned long long n)
 // License is GNU General Public License v3.0
 // (https://github.com/HungryVovka/Codewars-C/blob/main/LICENSE)
 // 
-// You should have received a copy of the GNU Lesser Public License
+// You should have received a copy of the GNU General Public License v3.0
 // along with this code. If not, see http://www.gnu.org/licenses/
 // -----------------------------------------------------------
