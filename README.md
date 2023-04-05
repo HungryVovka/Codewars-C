@@ -27,8 +27,10 @@ and users of this resource.
 All solution code in this repository 
 is the personal property of Vladimir Rukavishnikov
 (vladimirrukavishnikovmail@gmail.com).
+
 Copyright (C) 2022 Vladimir Rukavishnikov
-This file is part of the HungryVovka/Codewars-Python.
+
+This file is part of the HungryVovka/Codewars-C.
 
 You should have received a copy of the GNU Lesser Public License
-along with this code.  If not, see [http://www.gnu.org/licenses/].
+along with this code. If not, see [http://www.gnu.org/licenses/].
