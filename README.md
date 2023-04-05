@@ -21,6 +21,22 @@ Codewars is a platform that helps you learn, train, and improve your coding skil
 By following this tutorial, you will learn how to create a new account on Codewars, configure it for an optimal training experience, and become familiar with basic elements of the user interface. Soon you will be able to face the challenges collected in Codewars' library and start learning!
 
 # License
-Tasks are the property of Codewars (https://www.codewars.com/) and users of this resource.
+Tasks are the property of Codewars (https://www.codewars.com/) 
+and users of this resource.
 
-All solution code in this repository is my personal property. I forbid using it for training neural networks, educational materials and so on without my express written consent certified by my signature.
+All solution code in this repository 
+is the personal property of Vladimir Rukavishnikov
+(vladimirrukavishnikovmail@gmail.com).
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser Public License for more details.
+
+You should have received a copy of the GNU Lesser Public License
+along with this program.  If not, see [http://www.gnu.org/licenses/].
