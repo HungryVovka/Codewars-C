@@ -30,7 +30,7 @@ is the personal property of Vladimir Rukavishnikov
 
 Copyright (C) 2022 Vladimir Rukavishnikov
 
-This file is part of the HungryVovka/Codewars-C.
+This file is part of the HungryVovka/Codewars-C
 
 You should have received a copy of the GNU Lesser Public License
 along with this code. If not, see [http://www.gnu.org/licenses/].
