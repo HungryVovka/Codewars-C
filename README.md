@@ -13,6 +13,7 @@ Orher programming languages sollutions:
 | *Elixir*                  | https://github.com/HungryVovka/Codewars-Elixir                 | 5 kyu           |
 | *F#*                      | https://github.com/HungryVovka/Codewars-F-sharp                | 6 kyu           |
 | *JavaScript*              | https://github.com/HungryVovka/Codewars-JavaScript             | 3 kyu           |
+| *PHP*                     | https://github.com/HungryVovka/Codewars-PHP                    | 5 kyu           |
 | *Python*                  | https://github.com/HungryVovka/Codewars-Python                 | 3 kyu           |
 | *SQL*                     | https://github.com/HungryVovka/Codewars-SQL                    | 4 kyu           |
 | *VisualBasic*             | https://github.com/HungryVovka/Codewars-VisualBasic            | 5 kyu           |
