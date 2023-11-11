@@ -6,18 +6,18 @@ My assignment solutions of Codewars tasks by using C.
 [![Profile badge](https://www.codewars.com/users/HungryVovka/badges/large)](https://www.codewars.com/users/HungryVovka)
 
 Orher programming languages sollutions:
-| Language                  | Link                                                           |  Current rank   |
-| ------------------------- |----------------------------------------------------------------|:---------------:|
-| *С*                       | https://github.com/HungryVovka/Codewars-C                      | 6 kyu           |
-| *С#*                      | https://github.com/HungryVovka/Codewars-C-sharp                | 4 kyu           |
-| *СoffeeScript*            | https://github.com/HungryVovka/Codewars-C-sharp                | 5 kyu           |
-| *Elixir*                  | https://github.com/HungryVovka/Codewars-Elixir                 | 5 kyu           |
-| *F#*                      | https://github.com/HungryVovka/Codewars-F-sharp                | 5 kyu           |
-| *JavaScript*              | https://github.com/HungryVovka/Codewars-JavaScript             | 3 kyu           |
-| *PHP*                     | https://github.com/HungryVovka/Codewars-PHP                    | 5 kyu           |
-| *Python*                  | https://github.com/HungryVovka/Codewars-Python                 | 3 kyu           |
-| *SQL*                     | https://github.com/HungryVovka/Codewars-SQL                    | 4 kyu           |
-| *VisualBasic*             | https://github.com/HungryVovka/Codewars-VisualBasic            | 5 kyu           |
+| Language                  | Link                                                             |  Current rank   |
+| ------------------------- |------------------------------------------------------------------|:---------------:|
+| *С*                       | https://github.com/HungryVovka/Codewars-C                        | 6 kyu           |
+| *С#*                      | https://github.com/HungryVovka/Codewars-C-sharp                  | 4 kyu           |
+| *СoffeeScript*            | https://github.com/HungryVovka/Codewars-Codewars-CoffeeScript    | 5 kyu           |
+| *Elixir*                  | https://github.com/HungryVovka/Codewars-Elixir                   | 5 kyu           |
+| *F#*                      | https://github.com/HungryVovka/Codewars-F-sharp                  | 5 kyu           |
+| *JavaScript*              | https://github.com/HungryVovka/Codewars-JavaScript               | 3 kyu           |
+| *PHP*                     | https://github.com/HungryVovka/Codewars-PHP                      | 5 kyu           |
+| *Python*                  | https://github.com/HungryVovka/Codewars-Python                   | 3 kyu           |
+| *SQL*                     | https://github.com/HungryVovka/Codewars-SQL                      | 4 kyu           |
+| *VisualBasic*             | https://github.com/HungryVovka/Codewars-VisualBasic              | 5 kyu           |
 
 Codewars is a platform that helps you learn, train, and improve your coding skills by solving programming tasks of many types and difficulty levels. You choose how you would like to learn. Do you want to take on increasingly difficult challenges? Maybe you prefer training through repetition and by improving your solutions. After solving a task, compare your answer with other users and learn from them or help less experienced users by answering their questions.
 
