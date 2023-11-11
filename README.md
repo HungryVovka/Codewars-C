@@ -10,6 +10,7 @@ Orher programming languages sollutions:
 | ------------------------- |----------------------------------------------------------------|:---------------:|
 | *С*                       | https://github.com/HungryVovka/Codewars-C                      | 6 kyu           |
 | *С#*                      | https://github.com/HungryVovka/Codewars-C-sharp                | 4 kyu           |
+| *СoffeeScript*            | https://github.com/HungryVovka/Codewars-C-sharp                | 5 kyu           |
 | *Elixir*                  | https://github.com/HungryVovka/Codewars-Elixir                 | 5 kyu           |
 | *F#*                      | https://github.com/HungryVovka/Codewars-F-sharp                | 5 kyu           |
 | *JavaScript*              | https://github.com/HungryVovka/Codewars-JavaScript             | 3 kyu           |
