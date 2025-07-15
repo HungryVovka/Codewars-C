@@ -8,7 +8,7 @@ My assignment solutions of Codewars tasks by using C.
 Orher programming languages sollutions:
 | Language                  | Link                                                             |  Current rank   |
 | ------------------------- |------------------------------------------------------------------|:---------------:|
-| *С*                       | https://github.com/HungryVovka/Codewars-C                        | 6 kyu           |
+| *С*                       | https://github.com/HungryVovka/Codewars-C                        | 5 kyu           |
 | *С#*                      | https://github.com/HungryVovka/Codewars-C-sharp                  | 4 kyu           |
 | *СoffeeScript*            | https://github.com/HungryVovka/Codewars-CoffeeScript             | 5 kyu           |
 | *Elixir*                  | https://github.com/HungryVovka/Codewars-Elixir                   | 5 kyu           |
