@@ -31,7 +31,7 @@ All solution code in this repository
 is the personal property of Vladimir Rukavishnikov
 (vladimirrukavishnikovmail@gmail.com).
 
-Copyright (C) 2022 Vladimir Rukavishnikov
+Copyright (C) 2025 Vladimir Rukavishnikov
 
 This file is part of the HungryVovka/Codewars-C
 (https://github.com/HungryVovka/Codewars-C)
