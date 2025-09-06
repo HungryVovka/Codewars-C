@@ -1,29 +1,34 @@
 // -----------------------------------------------------------
-// Write a function that will check if two given characters are the same case.
+// Write a method, that will get an integer array as parameter and will process every number from this array.
 // 
-// If either of the characters is not a letter, return -1
-// If both characters are the same case, return 1
-// If both characters are letters, but not the same case, return 0
+// Return a new array with processing every number of the input-array like this:
 // 
-// Examples
-// 'a' and 'g' returns 1
+// If the number has an integer square root, take this, otherwise square the number.
 // 
-// 'A' and 'C' returns 1
+// Example
+// [4,3,9,7,2,1] -> [2,9,3,49,4,1]
 // 
-// 'b' and 'G' returns 0
-// 
-// 'B' and 'g' returns 0
-// 
-// '0' and '?' returns -1
+// Notes
+// The input array will always contain only positive numbers, and will never be empty or null.
 // -----------------------------------------------------------
 
-#include <ctype.h> // isalpha, islower, isupper
+#include <stdlib.h> // malloc
+#include <math.h> // sqrt
 
-int same_case (char a, char b){
-  if (!isalpha((unsigned char)a) || !isalpha((unsigned char)b)) return -1;
-  if ((islower((unsigned char)a) && islower((unsigned char)b)) ||
-      (isupper((unsigned char)a) && isupper((unsigned char)b))) return 1;
-  return 0;
+int* squareOrSquareRoot(int* array, int length){
+  int *risultato = malloc(length * sizeof(int));
+  if (!risultato) return NULL;
+  int i = 0;
+  for (; i < length; i++){
+    int num = array[i];
+    int radice = (int)sqrt((double)num);
+    if (radice * radice == num){
+      risultato[i] = radice;
+    } else {
+      risultato[i] = num * num;
+    }
+  }
+  return risultato;
 }
 
 // -----------------------------------------------------------

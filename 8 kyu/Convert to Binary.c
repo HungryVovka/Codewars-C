@@ -1,29 +1,25 @@
 // -----------------------------------------------------------
-// Write a function that will check if two given characters are the same case.
+// Task Overview
+// Given a non-negative integer b, write a function which returns an integer d such that the binary representation of b is the 
+// same as the decimal representation of d.
 // 
-// If either of the characters is not a letter, return -1
-// If both characters are the same case, return 1
-// If both characters are letters, but not the same case, return 0
+// Examples:
 // 
-// Examples
-// 'a' and 'g' returns 1
-// 
-// 'A' and 'C' returns 1
-// 
-// 'b' and 'G' returns 0
-// 
-// 'B' and 'g' returns 0
-// 
-// '0' and '?' returns -1
+// n = 1 should return 1
+// n = 5 should return 101
+// n = 11 should return 1011
 // -----------------------------------------------------------
 
-#include <ctype.h> // isalpha, islower, isupper
-
-int same_case (char a, char b){
-  if (!isalpha((unsigned char)a) || !isalpha((unsigned char)b)) return -1;
-  if ((islower((unsigned char)a) && islower((unsigned char)b)) ||
-      (isupper((unsigned char)a) && isupper((unsigned char)b))) return 1;
-  return 0;
+unsigned long long to_binary(unsigned short num){
+  if (num == 0) return 0;
+  unsigned long long risultato = 0, potenza10 = 1;
+  while (num > 0){
+    unsigned short bit = num % 2;
+    risultato += bit * potenza10;
+    potenza10 *= 10;
+    num /= 2;
+  }
+  return risultato;
 }
 
 // -----------------------------------------------------------
