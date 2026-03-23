@@ -1,0 +1,99 @@
+// -----------------------------------------------------------
+// A matrix is "fat" when the sum of the roots of its "Widths" is greater than 
+// the sum of the roots of its "Heights". Otherwise, we call it as a "thin" matrix.
+// 
+// But what is the meaning of that?
+// 
+// A Width of a matrix is the sum of all the elements in a row.
+// 
+// Similarly, a Height of a matrix is the sum of all the elements in a column.
+// 
+// Difficult to assimilate? Let's look at an example.
+// 
+// The matrix [ [1, 3] , [5, 7] ] :
+// 
+//   - Sum of rooted Widths: √(1+3) + √(5+7) = √4 + √12
+//   - Sum of rooted Heights: √(1+5) + √(3+7) = √6 + √10
+//   
+// Since "width" is smaller than "height", we determine this matrix is "thin".
+// 
+// The matrix [ [1, 4, 7], [2, 5, 8], [3, 6, 9] ] :
+// 
+//   - Sum of rooted Widths:√(1+4+7) + √(2+5+8) + √(3+6+9)  = √12 + √15 + √18  = 11.57972565...
+//   - Sum of rooted Heights: √(1+2+3) + √(4+5+6) + √(7+8+9) = √6 + √15 + √24 = 11.22145257...
+//   
+// Since "height" is smaller than "width", we determine this matrix is "fat".
+// 
+// TASK: Your task is to return "thin", "fat" or "perfect" depending on the results obtained.
+// 
+// NOTES:
+// 
+// All matrices will be squared
+// 
+// In case that both sums are equal, the matrix will be considered as "perfect".
+// 
+// DON'T round the roots... every digit matters ;)
+// 
+// Since the results of the roots may have a slight variation, to determine 
+// that a matrix is "perfect", I suggest you use an approximate error of 1E- 10.
+// 
+// If a Width or a Height is negative, return None
+// -----------------------------------------------------------
+
+#include <stddef.h>   // size_t
+#include <math.h>     // sqrt
+
+enum matrix_weight { NONE, THIN, FAT, PERFECT };
+
+enum matrix_weight thin_or_fat(size_t size, 
+                               const int matrix[size][size]) {
+  size_t i, j;
+  double widths[size];
+  double heights[size];
+  const double EPS = 1e-14;
+
+  for (i = 0; i < size; i++) {
+    widths[i] = 0.0;
+    heights[i] = 0.0;
+  }
+
+  for (i = 0; i < size; i++) {
+    for (j = 0; j < size; j++) {
+      widths[i] += matrix[i][j];
+      heights[j] += matrix[i][j];
+    }
+  }
+  for (i = 0; i < size; i++) {
+    if (widths[i] < 0.0 || heights[i] < 0.0) return NONE;
+  }
+  double sum_widths = 0.0;
+  double sum_heights = 0.0;
+  for (i = 0; i < size; i++) {
+    sum_widths += sqrt(widths[i]);
+    sum_heights += sqrt(heights[i]);
+  }
+  if (fabs(sum_widths - sum_heights) <= EPS) return PERFECT;
+  else if (sum_widths > sum_heights) return FAT;
+  else return THIN;
+}
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2026 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-C
+// (https://github.com/HungryVovka/Codewars-C)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-C/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
