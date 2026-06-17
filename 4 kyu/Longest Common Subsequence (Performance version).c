@@ -59,7 +59,6 @@ char *lcs(const char *x, const char *y) {
     result = reconstruct_lcs(x, y, dp, m, n);
 
     free_dp_table(dp, m);
-
     return result;
 }
 
