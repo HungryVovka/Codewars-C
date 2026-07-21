@@ -5,6 +5,12 @@ My assignment solutions of Codewars tasks by using C.
 
 [![Profile badge](https://www.codewars.com/users/HungryVovka/badges/large)](https://www.codewars.com/users/HungryVovka)
 
+<p align='center'>
+   <a href="https://ko-fi.com/hungryvovka" target="_blank">
+      <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/>
+   </a>
+</p>
+
 Orher programming languages sollutions:
 | Language                  | Link                                                             |  Current rank   |
 | ------------------------- |------------------------------------------------------------------|:---------------:|
