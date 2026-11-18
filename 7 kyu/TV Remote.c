@@ -1,0 +1,108 @@
+// -----------------------------------------------------------
+// Background
+// My TV remote control has arrow buttons and an OK button.
+// 
+// I can use these to move a "cursor" on a logical screen keyboard to type "words"...
+// 
+// The screen "keyboard" layout looks like this
+// 
+// a	b	c	d	e	1	2	3
+// f	g	h	i	j	4	5	6
+// k	l	m	n	o	7	8	9
+// p	q	r	s	t	.	@	0
+// u	v	w	x	y	z	_	/
+// 
+// Kata task
+// How many button presses on my remote are required to type a given word?
+// 
+// Notes
+// The cursor always starts on the letter a (top left)
+// Remember to also press OK to "accept" each character.
+// Take a direct route from one character to the next
+// The cursor does not wrap (e.g. you cannot leave one edge and reappear on the opposite edge)
+// A "word" (for the purpose of this Kata) is any sequence of characters available on 
+// my virtual "keyboard"
+// 
+// Example
+// word = codewars
+// 
+// c => a-b-c-OK = 3
+// o => c-d-e-j-o-OK = 5
+// d => o-j-e-d-OK = 4
+// e => d-e-OK = 2
+// w => e-j-o-t-y-x-w-OK = 7
+// a => w-r-m-h-c-b-a-OK = 7
+// r => a-f-k-p-q-r-OK = 6
+// s => r-s-OK = 2
+// 
+// Answer = 3 + 5 + 4 + 2 + 7 + 7 + 6 + 2 = 36
+// 
+// *Good Luck!
+// DM.*
+// -----------------------------------------------------------
+
+#include <stdlib.h>     // abs
+#include <string.h>     // strchr
+
+#define COLS 8
+
+int tv_remote(const char *word){
+  static const char keyboard[] = 
+    "abcde123"
+    "fghij456"
+    "klmno789"
+    "pqrst.@0"
+    "uvwxyz_/";
+  
+  const char *found;
+  int cur_row;
+  int cur_col;
+  int target_row;
+  int target_col;
+  int index;
+  int total_presses;
+  int i;
+  
+  if (!word) return 0;
+  
+  cur_row = 0;
+  cur_col = 0;
+  total_presses = 0;
+  
+  for (i = 0; word[i] != '\0'; i++){
+    found = strchr(keyboard, word[i]);
+    if (!found) continue;
+    index = (int)(found - keyboard);
+    target_row = index / COLS;
+    target_col = index % COLS;
+    
+    total_presses += abs(target_row - cur_row);
+    total_presses += abs(target_col - cur_col);
+    total_presses += 1;
+    
+    cur_row = target_row;
+    cur_col = target_col;
+  }
+  return total_presses;
+}
+
+// -----------------------------------------------------------
+// License
+// Tasks are the property of Codewars (https://www.codewars.com/) 
+// and users of this resource.
+// 
+// All solution code in this repository 
+// is the personal property of Vladimir Rukavishnikov
+// (vladimirrukavishnikovmail@gmail.com).
+// 
+// Copyright (C) 2026 Vladimir Rukavishnikov
+// 
+// This file is part of the HungryVovka/Codewars-C
+// (https://github.com/HungryVovka/Codewars-C)
+// 
+// License is GNU General Public License v3.0
+// (https://github.com/HungryVovka/Codewars-C/blob/main/LICENSE)
+// 
+// You should have received a copy of the GNU General Public License v3.0
+// along with this code. If not, see http://www.gnu.org/licenses/
+// -----------------------------------------------------------
